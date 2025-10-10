@@ -124,6 +124,45 @@
         font-size: var(--font-size-base);
         width: 100%;
     }
+
+    /* Contact - Stack form and info */
+    .contact-container {
+        padding: var(--space-6) var(--space-4);
+
+        .contact-content {
+            grid-template-columns: 1fr;
+            gap: var(--space-8);
+        }
+
+        .contact-form button[type="submit"] {
+            width: 100%;
+        }
+    }
+
+    /* Booking - Stack form and sidebar */
+    .booking-hero {
+        padding: var(--space-6) var(--space-4);
+    }
+
+    .booking-container {
+        grid-template-columns: 1fr;
+        padding: var(--space-6) var(--space-4);
+        gap: var(--space-8);
+
+        .booking-form {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .form-actions {
+                width: 100%;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 /* Tablet (641px to 1024px) */
@@ -137,8 +176,18 @@
     .about,
     .services-container,
     .team-container,
-    .testimonials-container {
+    .testimonials-container,
+    .contact-container,
+    .booking-hero,
+    .booking-container {
         padding: var(--space-8) var(--space-6);
+    }
+
+    /* Booking - Stack on smaller tablets */
+    @media (max-width: 768px) {
+        .booking-container {
+            grid-template-columns: 1fr;
+        }
     }
 
     /* Stack hero/about on smaller tablets */

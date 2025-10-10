@@ -350,6 +350,281 @@ navbar {
     }
 }
 
+/* Booking Page */
+.booking-hero {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-12);
+    text-align: center;
+
+    h2 {
+        margin-bottom: var(--space-4);
+    }
+
+    p {
+        color: var(--color-muted-foreground);
+    }
+}
+
+.booking-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-12);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-12);
+    align-items: start;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-6);
+        padding-bottom: var(--space-8);
+        border-bottom: 1px solid var(--color-border);
+
+        &:last-of-type {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        h3 {
+            color: var(--color-primary);
+        }
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-6);
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+
+        label {
+            font-weight: 600;
+            color: var(--color-foreground);
+        }
+
+        .form-input,
+        select {
+            padding: var(--space-2) var(--space-4);
+            border: 1px solid var(--color-border);
+            border-radius: 0.375rem;
+            font-size: var(--font-size-base);
+            font-family: inherit;
+            color: var(--color-foreground);
+            background: var(--color-background);
+            transition: border-color 0.2s, outline 0.2s;
+
+            &:focus {
+                outline: 2px solid var(--color-ring);
+                outline-offset: 0;
+                border-color: var(--color-primary);
+            }
+
+            &::placeholder {
+                color: var(--color-muted-foreground);
+            }
+        }
+
+        textarea.form-input {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        select {
+            cursor: pointer;
+        }
+    }
+
+    .radio-group {
+        display: flex;
+        gap: var(--space-6);
+
+        .radio-label {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            cursor: pointer;
+
+            input[type="radio"] {
+                width: 18px;
+                height: 18px;
+                cursor: pointer;
+            }
+
+            span {
+                font-size: var(--font-size-base);
+                color: var(--color-foreground);
+            }
+        }
+    }
+
+    .form-actions {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-4);
+        align-items: flex-start;
+
+        button {
+            padding: var(--space-3) var(--space-8);
+        }
+
+        p {
+            margin-top: var(--space-2);
+        }
+    }
+}
+
+.booking-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+
+    .sidebar-card {
+        background: var(--color-background);
+        border: 1px solid var(--color-border);
+        border-radius: 0.5rem;
+        padding: var(--space-6);
+
+        h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--space-4);
+        }
+
+        p {
+            margin-bottom: var(--space-2);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .booking-checklist {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-3);
+
+        li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-2);
+
+            &::before {
+                content: "✓";
+                color: var(--color-primary);
+                font-weight: bold;
+                flex-shrink: 0;
+            }
+        }
+    }
+}
+
+/* Contact Section */
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-12);
+
+    h2 {
+        text-align: center;
+        margin-bottom: var(--space-4);
+    }
+
+    .contact-intro {
+        text-align: center;
+        margin-bottom: var(--space-12);
+        color: var(--color-muted-foreground);
+    }
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: var(--space-12);
+        align-items: start;
+    }
+
+    .contact-form {
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-6);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+
+            label {
+                font-weight: 600;
+                color: var(--color-foreground);
+            }
+
+            .form-input {
+                padding: var(--space-2) var(--space-4);
+                border: 1px solid var(--color-border);
+                border-radius: 0.375rem;
+                font-size: var(--font-size-base);
+                font-family: inherit;
+                color: var(--color-foreground);
+                background: var(--color-background);
+                transition: border-color 0.2s, outline 0.2s;
+
+                &:focus {
+                    outline: 2px solid var(--color-ring);
+                    outline-offset: 0;
+                    border-color: var(--color-primary);
+                }
+
+                &::placeholder {
+                    color: var(--color-muted-foreground);
+                }
+            }
+
+            textarea.form-input {
+                resize: vertical;
+                min-height: 100px;
+            }
+        }
+
+        button[type="submit"] {
+            align-self: flex-start;
+        }
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-8);
+
+        .contact-info-item {
+            h3 {
+                color: var(--color-primary);
+                margin-bottom: var(--space-2);
+            }
+
+            p {
+                color: var(--color-foreground);
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
 /* Footer */
 .footer {
     background: var(--color-muted);

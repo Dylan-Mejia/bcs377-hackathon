@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/design-system.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <title>Book Appointment - Aura Dental Wellness</title>
+</head>
+<body>
+    <!-- Header -->
+    <navbar>
+        <div class="navbar-brand">
+            <h1 class="heading-1">Aura Dental Wellness</h1>
+        </div>
+        <nav class="navbar-nav">
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="booking.html" class="btn">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </navbar>
+
+    <!-- Booking Hero Section -->
+    <section class="bg-gradient-hero">
+        <div class="booking-hero">
+            <h2 class="heading-hero">Schedule Your Appointment</h2>
+            <p class="body-lg">We're excited to help you achieve your healthiest, brightest smile. Fill out the form below and we'll confirm your appointment shortly.</p>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="bg-background-muted">
+        <div class="booking-container">
+            <form class="booking-form">
+                <!-- Personal Information -->
+                <div class="form-section">
+                    <h3 class="heading-3">Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName" class="body-sm">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" class="form-input" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="body-sm">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Doe" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" class="body-sm">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="body-sm">Phone *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="(123) 456-7890" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appointment Details -->
+                <div class="form-section">
+                    <h3 class="heading-3">Appointment Details</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferredDate" class="body-sm">Preferred Date *</label>
+                            <input type="date" id="preferredDate" name="preferredDate" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferredTime" class="body-sm">Preferred Time *</label>
+                            <select id="preferredTime" name="preferredTime" class="form-input" required>
+                                <option value="">Select a time</option>
+                                <option value="8:00 AM">8:00 AM</option>
+                                <option value="9:00 AM">9:00 AM</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="1:00 PM">1:00 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                                <option value="5:00 PM">5:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceType" class="body-sm">Service Type *</label>
+                        <select id="serviceType" name="serviceType" class="form-input" required>
+                            <option value="">Select a service</option>
+                            <option value="preventive">Preventive Care (Cleaning, Exam)</option>
+                            <option value="cosmetic">Cosmetic Dentistry (Whitening, Veneers)</option>
+                            <option value="restorative">Restorative Dentistry (Fillings, Crowns)</option>
+                            <option value="orthodontics">Orthodontics (Braces, Invisalign)</option>
+                            <option value="sedation">Sedation Dentistry</option>
+                            <option value="pediatric">Pediatric Dentistry</option>
+                            <option value="emergency">Emergency Dental Care</option>
+                            <option value="implants">Dental Implants</option>
+                            <option value="consultation">General Consultation</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Patient Information -->
+                <div class="form-section">
+                    <h3 class="heading-3">Patient Information</h3>
+                    <div class="form-group">
+                        <label class="body-sm">Patient Type *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="patientType" value="new" required>
+                                <span>New Patient</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="patientType" value="existing" required>
+                                <span>Existing Patient</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="insurance" class="body-sm">Insurance Provider (Optional)</label>
+                        <input type="text" id="insurance" name="insurance" class="form-input" placeholder="e.g., Blue Cross, Aetna, etc.">
+                    </div>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="form-section">
+                    <h3 class="heading-3">Additional Information</h3>
+                    <div class="form-group">
+                        <label for="notes" class="body-sm">Special Requests or Notes (Optional)</label>
+                        <textarea id="notes" name="notes" class="form-input" rows="4" placeholder="Any specific concerns, requests, or questions you'd like us to know about..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Request Appointment</button>
+                    <p class="body-sm text-muted-foreground">* Required fields. We'll contact you within 24 hours to confirm your appointment.</p>
+                </div>
+            </form>
+
+            <!-- Booking Sidebar -->
+            <aside class="booking-sidebar">
+                <div class="sidebar-card">
+                    <h3 class="heading-4">What to Expect</h3>
+                    <ul class="booking-checklist">
+                        <li class="body-sm">We'll confirm your appointment within 24 hours</li>
+                        <li class="body-sm">Bring your insurance card and ID</li>
+                        <li class="body-sm">Arrive 10 minutes early for new patients</li>
+                        <li class="body-sm">Complete any necessary paperwork</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="heading-4">Contact Us</h3>
+                    <p class="body-sm">Have questions?</p>
+                    <p class="body-base">📞 (123) 456-7890</p>
+                    <p class="body-base">📧 info@auradental.com</p>
+                </div>
+
+                <div class="sidebar-card">
+                    <h3 class="heading-4">Office Hours</h3>
+                    <p class="body-sm">
+                        Monday - Friday: 8 AM – 5 PM<br>
+                        Saturday: 9 AM – 2 PM<br>
+                        Sunday: Closed
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="heading-4">Aura Dental Wellness</h3>
+                <p class="body-sm text-muted-foreground">Providing exceptional dental care with a caring, professional team.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Contact</h4>
+                <p class="body-sm">📍 123 Health St, Healthy City, HC 12345</p>
+                <p class="body-sm">📞 (123) 456-7890</p>
+                <p class="body-sm">📧 info@auradental.com</p>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Hours</h4>
+                <p class="body-sm">Monday - Friday: 8 AM – 5 PM</p>
+                <p class="body-sm">Saturday: 9 AM – 2 PM</p>
+                <p class="body-sm">Sunday: Closed</p>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="body-sm">Facebook</a>
+                    <a href="#" class="body-sm">Instagram</a>
+                    <a href="#" class="body-sm">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="body-sm text-muted-foreground">© 2025 Aura Dental Care. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="body-sm">Privacy Policy</a>
+                <a href="#" class="body-sm">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
