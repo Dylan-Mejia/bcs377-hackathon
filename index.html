@@ -8,28 +8,30 @@
 </head>
 <body>
     <!-- Header -->
-    <navbar class="bg-primary">
-        <div class="container">
+    <navbar>
+        <div class="navbar-brand">
             <h1 class="heading-1">Aura Dental Wellness</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#" class="btn">Book Appointment</a></li>
-                </ul>
-            </nav>
         </div>
+        <nav class="navbar-nav">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="btn">Book Appointment</a></li>
+            </ul>
+        </nav>
     </navbar>
 
     <!-- Hero Section -->
-    <section class="hero p-12 bg-secondary">
+    <section class="hero p-12 bg-background">
         <div class="hero-content">
             <h2 class="heading-hero">Your Smile, Our Priority</h2>
             <p class="body-lg">We are dedicated to providing top quality dental care for all of our patients. We accept many dental insurances!</p>
-            <a href="#" class="btn-primary">Book an Appointment</a>
-            <a href="#" class="btn-secondary">Meet Our Team</a>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">Book an Appointment</a>
+                <a href="#" class="btn-secondary">Meet Our Team</a>
+            </div>
         </div>
         <div class="hero-image">
             <img src="images/patient_smiling.png" alt="Smiling patient at dental clinic">
@@ -38,41 +40,55 @@
 
     <!-- About Section -->
     <section class="about p-12 bg-background">
-        <div class="container">
+        <div class="about-image">
+            <img src="images/aura_team.png" alt="Aura Dental team">
+        </div>
+        <div class="about-content">
             <h2 class="heading-2">Who We Are</h2>
             <p class="body-base">At Aura Dental, we believe everyone deserves a healthy, confident smile. With state-of-the-art technology and a caring team, we provide personalized dental care in a comfortable environment.</p>
-            <img src="images/aura_team.png" alt="Aura Dental team">
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services p-12 bg-muted">
-        <div class="container">
+    <section class="services p-12 bg-background">
+        <div class="services-container">
             <h2 class="heading-2">Our Services</h2>
-            <div class="service-grid gap-6">
-                <div class="service-card p-6 bg-card">
-                    <h3 class="heading-3">Preventive Care</h3>
-                    <p class="body-base">Cleanings, Exams</p>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3 class="heading-4">Preventive Care</h3>
+                    <p class="body-sm text-muted-foreground">Cleanings, Exams</p>
                 </div>
-                <div class="service-card p-6 bg-card">
-                    <h3 class="heading-3">Cosmetic Dentistry</h3>
-                    <p class="body-base">Whitening, Veneers</p>
+                <div class="service-item">
+                    <h3 class="heading-4">Cosmetic Dentistry</h3>
+                    <p class="body-sm text-muted-foreground">Whitening, Veneers</p>
                 </div>
-                <div class="service-card p-6 bg-card">
-                    <h3 class="heading-3">Restorative Dentistry</h3>
-                    <p class="body-base">Fillings, Crowns</p>
+                <div class="service-item">
+                    <h3 class="heading-4">Restorative Dentistry</h3>
+                    <p class="body-sm text-muted-foreground">Fillings, Crowns</p>
                 </div>
-                <div class="service-card p-6 bg-card">
-                    <h3 class="heading-3">Orthodontics</h3>
-                    <p class="body-base">Braces, Invisalign</p>
+                <div class="service-item">
+                    <h3 class="heading-4">Orthodontics</h3>
+                    <p class="body-sm text-muted-foreground">Braces, Invisalign</p>
                 </div>
-                <div class="service-card p-6 bg-card">
-                    <h3 class="heading-3">Sedation Dentistry</h3>
-                    <p class="body-base">Comfort-focused care</p>
+                <div class="service-item">
+                    <h3 class="heading-4">Sedation Dentistry</h3>
+                    <p class="body-sm text-muted-foreground">Comfort-focused care</p>
                 </div>
-                <div class="service-card p-6 bg-card">
-                    <h3 class="heading-3">Pediatric Dentistry</h3>
-                    <p class="body-base">Gentle care for kids</p>
+                <div class="service-item">
+                    <h3 class="heading-4">Pediatric Dentistry</h3>
+                    <p class="body-sm text-muted-foreground">Gentle care for kids</p>
+                </div>
+                <div class="service-item">
+                    <h3 class="heading-4">Emergency Dental Care</h3>
+                    <p class="body-sm text-muted-foreground">Same-day appointments</p>
+                </div>
+                <div class="service-item">
+                    <h3 class="heading-4">Teeth Whitening</h3>
+                    <p class="body-sm text-muted-foreground">Professional brightening</p>
+                </div>
+                <div class="service-item">
+                    <h3 class="heading-4">Dental Implants</h3>
+                    <p class="body-sm text-muted-foreground">Permanent tooth replacement</p>
                 </div>
             </div>
         </div>
@@ -80,59 +96,89 @@
 
     <!-- Team Section -->
     <section class="team p-12 bg-background">
-        <div class="container">
+        <div class="team-container">
             <h2 class="heading-2">Our Dental Experts</h2>
-            <div class="team-grid gap-8">
-                <div class="team-member p-6">
-                    <img src="images/dr-smith.jpg" alt="Dr. Jane Smith">
-                    <h3 class="heading-3">Dr. Jane Smith</h3>
-                    <p class="body-base text-muted-foreground">General & Cosmetic Dentist</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-card-header">
+                        <img src="images/jane_smith.png" alt="Dr. Jane Smith">
+                    </div>
+                    <div class="team-card-content">
+                        <h3 class="heading-4">Dr. Jane Smith</h3>
+                        <p class="body-sm text-muted-foreground">General & Cosmetic Dentist</p>
+                    </div>
                 </div>
-                <div class="team-member p-6">
-                    <img src="images/dr-nguyen.jpg" alt="Dr. Alex Nguyen">
-                    <h3 class="heading-3">Dr. Alex Nguyen</h3>
-                    <p class="body-base text-muted-foreground">Orthodontist</p>
+                <div class="team-card">
+                    <div class="team-card-header">
+                        <img src="images/alex.png" alt="Dr. Alex Nguyen">
+                    </div>
+                    <div class="team-card-content">
+                        <h3 class="heading-4">Dr. Alex Nguyen</h3>
+                        <p class="body-sm text-muted-foreground">Orthodontist</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials p-12 bg-secondary">
-        <div class="container">
+    <section class="testimonials p-12 bg-background">
+        <div class="testimonials-container">
             <h2 class="heading-2">What Our Patients Say</h2>
-            <blockquote class="body-lg">
-                "The friendliest staff and the best dental care I've ever received!" – Sarah M.
+            <blockquote class="testimonial-quote">
+                <p class="quote-text">"The friendliest staff and the best dental care I've ever received!"</p>
+                <cite class="quote-author">Sarah M.</cite>
             </blockquote>
         </div>
     </section>
 
     <!-- Call to Action -->
-    <section class="cta p-12 bg-brand">
-        <div class="container">
-            <h2 class="heading-2">Ready for a Brighter Smile?</h2>
+    <section class="cta p-12 bg-background">
+        <div class="cta-container">
+            <h2 class="heading-hero">Ready for a Brighter Smile?</h2>
+            <p class="body-lg">Book your appointment today and experience exceptional dental care.</p>
             <a href="#" class="btn-primary">Schedule Your Visit</a>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <footer class="footer p-12 bg-muted">
-        <div class="container">
-            <h2 class="heading-2">Contact & Location</h2>
-            <p class="body-base">📍 123 Health St, Healthy City, HC 12345</p>
-            <p class="body-base">📞 (123) 456-7890</p>
-            <p class="body-base">📧 info@auradental.com</p>
-            <p class="body-base">🕒 Mon–Fri: 8 AM – 5 PM</p>
-            <nav class="footer-nav">
-                <a href="#">Privacy Policy</a> |
-                <a href="#">Terms of Service</a>
-            </nav>
-            <div class="social-icons gap-4">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
+    <!-- Footer -->
+    <footer class="footer p-12">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="heading-4">Aura Dental Wellness</h3>
+                <p class="body-sm text-muted-foreground">Providing exceptional dental care with a caring, professional team.</p>
             </div>
-            <p class="body-sm">© 2025 Aura Dental Care</p>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Contact</h4>
+                <p class="body-sm">📍 123 Health St, Healthy City, HC 12345</p>
+                <p class="body-sm">📞 (123) 456-7890</p>
+                <p class="body-sm">📧 info@auradental.com</p>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Hours</h4>
+                <p class="body-sm">Monday - Friday: 8 AM – 5 PM</p>
+                <p class="body-sm">Saturday: 9 AM – 2 PM</p>
+                <p class="body-sm">Sunday: Closed</p>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="body-sm">Facebook</a>
+                    <a href="#" class="body-sm">Instagram</a>
+                    <a href="#" class="body-sm">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="body-sm text-muted-foreground">© 2025 Aura Dental Care. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="body-sm">Privacy Policy</a>
+                <a href="#" class="body-sm">Terms of Service</a>
+            </div>
         </div>
     </footer>
 </body>
