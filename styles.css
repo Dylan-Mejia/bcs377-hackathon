@@ -1,0 +1,170 @@
+:root {
+    /* Spacing */
+    --space-2: 0.5rem;   /* 8px */
+    --space-4: 1rem;     /* 16px */
+    --space-6: 1.5rem;   /* 24px */
+    --space-8: 2rem;     /* 32px */
+    --space-12: 3rem;    /* 48px */
+
+    /* Typography */
+    --font-size-caption: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-h4: 1.25rem;
+    --font-size-h3: 1.5rem;
+    --font-size-h2: 1.875rem;
+    --font-size-h1: 2.25rem;
+    --font-size-hero: 3rem;
+
+    /* Colors */
+    --color-background: #ffffff;
+    --color-foreground: #27272a;
+    --color-primary: #7c5fc7;
+    --color-primary-foreground: #ffffff;
+    --color-secondary: #f6f4fb;
+    --color-secondary-foreground: #4a3284;
+    --color-muted: #fafafa;
+    --color-muted-foreground: #71717a;
+    --color-accent: #2bb4c8;
+    --color-accent-foreground: #ffffff;
+    --color-brand: #6b4fb8;
+    --color-brand-foreground: #ffffff;
+    --color-success: #22c55e;
+    --color-success-foreground: #ffffff;
+    --color-card: #ffffff;
+    --color-card-foreground: #27272a;
+    --color-border: #e8e8ed;
+    --color-ring: #7c5fc7;
+}
+
+/* Spacing Utilities */
+.p-2 {
+    padding: var(--space-2);
+}
+
+.p-4 {
+    padding: var(--space-4);
+}
+
+.p-6 {
+    padding: var(--space-6);
+}
+
+.p-8 {
+    padding: var(--space-8);
+}
+
+.p-12 {
+    padding: var(--space-12);
+}
+
+.gap-2 {
+    gap: var(--space-2);
+}
+
+.gap-4 {
+    gap: var(--space-4);
+}
+
+.gap-6 {
+    gap: var(--space-6);
+}
+
+.gap-8 {
+    gap: var(--space-8);
+}
+
+.gap-12 {
+    gap: var(--space-12);
+}
+
+/* Typography Classes */
+.heading-hero {
+    font-size: var(--font-size-hero);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.heading-1 {
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.heading-2 {
+    font-size: var(--font-size-h2);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.heading-3 {
+    font-size: var(--font-size-h3);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.heading-4 {
+    font-size: var(--font-size-h4);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.body-lg {
+    font-size: var(--font-size-lg);
+    line-height: 1.6;
+}
+
+.body-base {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+}
+
+.body-sm {
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+    color: var(--color-muted-foreground);
+}
+
+.caption {
+    font-size: var(--font-size-caption);
+    line-height: 1.4;
+    color: var(--color-muted-foreground);
+}
+
+/* Color Utilities */
+.bg-background {
+    background-color: var(--color-background);
+}
+
+.text-foreground {
+    color: var(--color-foreground);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.text-primary-foreground {
+    color: var(--color-primary-foreground);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.bg-muted {
+    background-color: var(--color-muted);
+}
+
+.text-muted-foreground {
+    color: var(--color-muted-foreground);
+}
+
+.bg-brand {
+    background-color: var(--color-brand);
+}
+
+.border-border {
+    border-color: var(--color-border);
+}
