@@ -1,0 +1,194 @@
+/* ==========================================================================
+   RESPONSIVE STYLES
+   Mobile-first approach with consolidated breakpoints
+   ========================================================================== */
+
+/* Mobile (up to 640px) */
+@media (max-width: 640px) {
+    /* Typography - Scale down for mobile */
+    .heading-hero { font-size: 2rem; }
+    .heading-1 { font-size: 1.75rem; }
+    .heading-2 { font-size: 1.5rem; }
+    .body-lg { font-size: 1rem; }
+
+    /* Reduce padding on all sections */
+    .hero,
+    .about,
+    .services-container,
+    .team-container,
+    .testimonials-container,
+    .cta,
+    .footer {
+        padding: var(--space-6) var(--space-4);
+    }
+
+    /* Navbar - Vertical stack for mobile */
+    navbar {
+        padding: var(--space-4);
+
+        .navbar-brand h1 {
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav {
+            ul {
+                flex-direction: column;
+                width: 100%;
+                align-items: stretch;
+            }
+
+            a {
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+
+    /* Hero - Stack vertically */
+    .hero {
+        flex-direction: column;
+        gap: var(--space-6);
+
+        .hero-image {
+            max-width: 100%;
+        }
+
+        .hero-buttons {
+            flex-direction: column;
+            width: 100%;
+
+            a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    /* About - Stack vertically */
+    .about {
+        flex-direction: column;
+        gap: var(--space-6);
+
+        .about-image {
+            max-width: 100%;
+        }
+    }
+
+    /* Services - Single column */
+    .services-container .services-list {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    /* Team - Single column */
+    .team-container .team-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    /* Testimonials - Single column */
+    .testimonials-container {
+        .testimonials-grid {
+            grid-template-columns: 1fr;
+            gap: var(--space-4);
+        }
+
+        .testimonial-quote {
+            padding: var(--space-4);
+        }
+    }
+
+    /* Footer - Stack sections */
+    .footer {
+        .footer-content {
+            grid-template-columns: 1fr;
+            gap: var(--space-6);
+            margin-bottom: var(--space-8);
+        }
+
+        .footer-bottom {
+            flex-direction: column;
+            gap: var(--space-4);
+            text-align: center;
+        }
+
+        .footer-links {
+            flex-direction: column;
+            gap: var(--space-2);
+        }
+    }
+
+    /* CTA - Full width button */
+    .cta-container .btn-primary {
+        padding: var(--space-2) var(--space-6);
+        font-size: var(--font-size-base);
+        width: 100%;
+    }
+}
+
+/* Tablet (641px to 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    /* Typography - Scale for tablets */
+    .heading-hero { font-size: 2.5rem; }
+    .heading-1 { font-size: 2rem; }
+
+    /* Moderate padding for tablets */
+    .hero,
+    .about,
+    .services-container,
+    .team-container,
+    .testimonials-container {
+        padding: var(--space-8) var(--space-6);
+    }
+
+    /* Stack hero/about on smaller tablets */
+    @media (max-width: 768px) {
+        .hero,
+        .about {
+            flex-direction: column;
+            gap: var(--space-8);
+
+            .hero-image,
+            .about-image {
+                max-width: 100%;
+            }
+        }
+    }
+
+    /* 2-column layouts for tablets */
+    .services-container .services-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+
+    .testimonials-container .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+
+    .footer .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+}
+
+/* Large tablets/small desktops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Horizontal navbar for larger screens */
+    navbar {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .navbar-brand {
+            text-align: left;
+        }
+
+        .navbar-nav {
+            width: auto;
+
+            ul {
+                flex-direction: row;
+            }
+        }
+    }
+}

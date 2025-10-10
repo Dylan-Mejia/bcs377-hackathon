@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/design-system.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
     <title>Aura Dental Wellness</title>
 </head>
 <body>
@@ -24,35 +26,43 @@
     </navbar>
 
     <!-- Hero Section -->
-    <section class="hero p-12 bg-background">
-        <div class="hero-content">
-            <h2 class="heading-hero">Your Smile, Our Priority</h2>
-            <p class="body-lg">We are dedicated to providing top quality dental care for all of our patients. We accept many dental insurances!</p>
-            <div class="hero-buttons">
-                <a href="#" class="btn-primary">Book an Appointment</a>
-                <a href="#" class="btn-secondary">Meet Our Team</a>
+    <section class="bg-gradient-hero">
+        <div class="hero">
+            <div class="hero-content">
+                <h2 class="heading-hero">Your Smile, Our Priority</h2>
+                <p class="body-lg">We are dedicated to providing top quality dental care for all of our patients. We accept many dental insurances!</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary">Book an Appointment</a>
+                    <a href="#" class="btn-secondary">Meet Our Team</a>
+                </div>
             </div>
-        </div>
-        <div class="hero-image">
-            <img src="images/patient_smiling.png" alt="Smiling patient at dental clinic">
+            <div class="hero-image">
+                <img src="images/patient_smiling.png" alt="Smiling patient at dental clinic">
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about p-12 bg-background">
-        <div class="about-image">
-            <img src="images/aura_team.png" alt="Aura Dental team">
-        </div>
-        <div class="about-content">
-            <h2 class="heading-2">Who We Are</h2>
-            <p class="body-base">At Aura Dental, we believe everyone deserves a healthy, confident smile. With state-of-the-art technology and a caring team, we provide personalized dental care in a comfortable environment.</p>
+    <section class="bg-background-muted">
+        <div class="about">
+            <div class="about-image">
+                <img src="images/aura_team.png" alt="Aura Dental team">
+            </div>
+            <div class="about-content">
+                <h2 class="heading-2">Who We Are</h2>
+                <p class="body-base">At Aura Dental, we believe everyone deserves a healthy, confident smile. With state-of-the-art technology and a caring team, we provide personalized dental care in a comfortable environment.</p>
+                <div>
+                    <a href="#" class="btn-primary">Learn More</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services p-12 bg-background">
+    <section class="bg-background-subtle">
         <div class="services-container">
             <h2 class="heading-2">Our Services</h2>
+            <p class="body-base services-intro">Comprehensive dental care tailored to your needs</p>
             <div class="services-list">
                 <div class="service-item">
                     <h3 class="heading-4">Preventive Care</h3>
@@ -91,11 +101,14 @@
                     <p class="body-sm text-muted-foreground">Permanent tooth replacement</p>
                 </div>
             </div>
+            <div class="services-cta">
+                <a href="#" class="btn-primary">Learn More About Our Services</a>
+            </div>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section class="team p-12 bg-background">
+    <section class="bg-background-muted">
         <div class="team-container">
             <h2 class="heading-2">Our Dental Experts</h2>
             <div class="team-grid">
@@ -122,7 +135,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials p-12 bg-background">
+    <section class="bg-background-light">
         <div class="testimonials-container">
             <h2 class="heading-2">What Our Patients Say</h2>
             <div class="testimonials-grid">
@@ -143,7 +156,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="cta p-12 bg-background">
+    <section class="cta">
         <div class="cta-container">
             <h2 class="heading-hero">Ready for a Brighter Smile?</h2>
             <p class="body-lg">Book your appointment today and experience exceptional dental care.</p>
@@ -152,7 +165,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer p-12">
+    <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h3 class="heading-4">Aura Dental Wellness</h3>

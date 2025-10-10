@@ -1,0 +1,125 @@
+/* ==========================================================================
+   DESIGN SYSTEM
+   Core variables, reset, and utility classes
+   ========================================================================== */
+
+/* Design Tokens */
+:root {
+    /* Spacing Scale */
+    --space-2: 0.5rem;   /* 8px */
+    --space-4: 1rem;     /* 16px */
+    --space-6: 1.5rem;   /* 24px */
+    --space-8: 2rem;     /* 32px */
+    --space-12: 3rem;    /* 48px */
+
+    /* Typography Scale */
+    --font-size-caption: 0.75rem;   /* 12px */
+    --font-size-sm: 0.875rem;       /* 14px */
+    --font-size-base: 1rem;         /* 16px */
+    --font-size-lg: 1.125rem;       /* 18px */
+    --font-size-h4: 1.25rem;        /* 20px */
+    --font-size-h3: 1.5rem;         /* 24px */
+    --font-size-h2: 1.875rem;       /* 30px */
+    --font-size-h1: 2.25rem;        /* 36px */
+    --font-size-hero: 3rem;         /* 48px */
+
+    /* Color Palette */
+    --color-background: #ffffff;
+    --color-foreground: #27272a;
+    --color-background-light: #fdfcfe;
+    --color-background-subtle: #f9f7fc;
+    --color-background-muted: #fafafa;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, #ffffff 0%, #f6f4fb 100%);
+    --gradient-accent: linear-gradient(135deg, var(--color-primary) 0%, var(--color-brand) 100%);
+
+    /* Semantic Colors */
+    --color-primary: #7c5fc7;
+    --color-primary-foreground: #ffffff;
+    --color-secondary: #f6f4fb;
+    --color-secondary-foreground: #4a3284;
+    --color-muted: #fafafa;
+    --color-muted-foreground: #71717a;
+    --color-accent: #2bb4c8;
+    --color-accent-foreground: #ffffff;
+    --color-brand: #6b4fb8;
+    --color-brand-foreground: #ffffff;
+    --color-success: #22c55e;
+    --color-success-foreground: #ffffff;
+    --color-card: #ffffff;
+    --color-card-foreground: #27272a;
+    --color-border: #e8e8ed;
+    --color-ring: #7c5fc7;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--color-foreground);
+    background: var(--color-background);
+}
+
+/* Typography Utilities */
+.heading-hero {
+    font-size: var(--font-size-hero);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.heading-1 {
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.heading-2 {
+    font-size: var(--font-size-h2);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.heading-3 {
+    font-size: var(--font-size-h3);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.heading-4 {
+    font-size: var(--font-size-h4);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.body-lg {
+    font-size: var(--font-size-lg);
+    line-height: 1.6;
+}
+
+.body-base {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+}
+
+.body-sm {
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+    color: var(--color-muted-foreground);
+}
+
+/* Background Utilities */
+.bg-background { background-color: var(--color-background); }
+.bg-background-light { background-color: var(--color-background-light); }
+.bg-background-subtle { background-color: var(--color-background-subtle); }
+.bg-background-muted { background-color: var(--color-background-muted); }
+.bg-gradient-hero { background: var(--gradient-hero); }
+
+/* Text Utilities */
+.text-foreground { color: var(--color-foreground); }
+.text-muted-foreground { color: var(--color-muted-foreground); }
